@@ -32,7 +32,7 @@ if (false === $result) {
 }
 $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
-if ($statusCode === 200) {
+if ($statusCode === 201) {
     $user = json_decode($result, true);
     var_dump($user);
 } else {
